@@ -1,0 +1,32 @@
+{
+  "name": "node-xiaomi-push",
+  "version": "0.0.1",
+  "description": "xiaomi.com MiPush, xiaomi push service server SDK",
+  "homepage": "https://github.com/jiecao-fm/node-xiaomi-push",
+  "bugs": "https://github.com/jiecao-fm/node-xiaomi-push/issues",
+  "dependencies": {
+    "config": "^0.4.35",
+    "co": "^3.0.5",
+    "request": "^2.34.0",
+    "thunkify": "0.0.1"
+  },
+  "devDependencies": {
+    "debug": "^0.7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiecao-fm/node-xiaomi-push"
+  },
+  "keywords": [
+    "push",
+    "android push notification",
+    "xiaomi",
+    "MiPush"
+  ],
+  "author": "C.C. <fanweixiao@gmail.com> (http://onlyvc.us)",
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
