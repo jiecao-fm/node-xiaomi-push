@@ -15,35 +15,32 @@ var push = new MiPush(MiPush_Config);
   console.log('res', res.body);
 });*/
 
-/*
-push.send_to_topic('cc',
-          {
+function get_msg(body){
+    return {
             title: 'jiecao.fm',
-            desc: 'you\'ve got mail',
-            payload: {
-              'hello': 'world'
-            }
-          }
-)(function(err, res){
-	console.log('err', err);
-  console.log('res', res.body);
-});
-*/
-
-push.send_to_topic('cc',
-          {
-            title: 'jiecao.fm',
-            desc: '22222222',
+            desc: body || new Date().valueOf(),
             payload: {
               'hello': 'world1'
             }
-          },
+          };
+};
+
+function get_result(err, res){
+	console.log('err', err);
+  console.log('res', res.body);
+};
+
+push.send_to_topic('cc', get_msg(),
           {
             notify_type: NOTIFY_TYPE.SOUND | NOTIFY_TYPE.LIGHTS | NOTIFY_TYPE.VIBRATE,
             notify_id: NOTIFY_ID.ID_1,
             notify_foreground: NOTIFY_FOREGROUND.DISCARD
           }
-)(function(err, res){
-	console.log('err', err);
-  console.log('res', res.body);
-});
+)(get_result);
+
+push.send_to_aliases(['s1'], get_msg('s1'), {
+    notify_id: NOTIFY_ID.ID_2
+})(get_result);
+push.send_to_aliases(['s2'], get_msg('s2'), {
+    notify_id: NOTIFY_ID.ID_3
+})(get_result);
