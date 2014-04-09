@@ -29,7 +29,7 @@ function get_result(err, res){
 	console.log('err', err);
   console.log('res', res.body);
 };
-
+/*
 push.send_to_topic('cc', get_msg(),
           {
             notify_type: NOTIFY_TYPE.SOUND | NOTIFY_TYPE.LIGHTS | NOTIFY_TYPE.VIBRATE,
@@ -37,10 +37,12 @@ push.send_to_topic('cc', get_msg(),
             notify_foreground: NOTIFY_FOREGROUND.DISCARD
           }
 )(get_result);
-
-push.send_to_aliases(['s1'], get_msg('s1'), {
+*/
+push.send_to_aliases(['s1', 's2','s3','s4'], get_msg('s1'), {
     notify_id: NOTIFY_ID.ID_2
 })(get_result);
+/*
 push.send_to_aliases(['s2'], get_msg('s2'), {
     notify_id: NOTIFY_ID.ID_3
 })(get_result);
+*/
