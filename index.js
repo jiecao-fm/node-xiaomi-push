@@ -39,10 +39,11 @@ push.send_to_topic('cc', get_msg(),
 )(get_result);
 */
 push.send_to_aliases(['s1', 's2','s3','s4'], get_msg('s1'), {
-    notify_id: NOTIFY_ID.ID_2
+    notify_id: NOTIFY_ID.ID_2,
+    notify_effect: NOTIFY_EFFECT.WEB_URI,
+    web_uri: 'http://jiecao.fm'
 })(get_result);
-/*
-push.send_to_aliases(['s2'], get_msg('s2'), {
+
+push.send_to_reg_id('2323', get_msg('reg2'), {
     notify_id: NOTIFY_ID.ID_3
 })(get_result);
-*/
