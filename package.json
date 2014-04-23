@@ -6,7 +6,6 @@
   "bugs": "https://github.com/jiecao-fm/node-xiaomi-push/issues",
   "dependencies": {
     "config": "^0.4.35",
-    "co": "^3.0.5",
     "request": "^2.34.0",
     "thunkify": "0.0.1",
     "lodash": "^2.4.1"
