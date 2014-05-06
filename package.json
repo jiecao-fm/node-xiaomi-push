@@ -1,6 +1,6 @@
 {
   "name": "node-xiaomi-push",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "xiaomi.com MiPush, xiaomi push service server SDK",
   "homepage": "https://github.com/jiecao-fm/node-xiaomi-push",
   "bugs": "https://github.com/jiecao-fm/node-xiaomi-push/issues",
