@@ -1,17 +1,17 @@
 {
   "name": "node-xiaomi-push",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "xiaomi.com MiPush, xiaomi push service server SDK",
   "homepage": "https://github.com/jiecao-fm/node-xiaomi-push",
   "bugs": "https://github.com/jiecao-fm/node-xiaomi-push/issues",
   "dependencies": {
-    "config": "^0.4.35",
-    "request": "^2.34.0",
-    "thunkify": "0.0.1",
+    "config": "^1.8.0",
+    "request": "^2.48.0",
+    "thunkify": "2.1.2",
     "lodash": "^2.4.1"
   },
   "devDependencies": {
-    "debug": "^0.7.4"
+    "debug": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
